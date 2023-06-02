@@ -8,7 +8,7 @@ def discount10(price):
 def discountReg(price):
     return discount10(price) * .95
 
-# Part 2: Calculate the value of mathematical expression x*(x+5)^2 where x= 5 using lambda expression.
+# Part 2
 x = 5
 print((lambda x: x*(x+5)**2)(x))
 
@@ -28,7 +28,6 @@ class Computer:
     def displayspecs(self):
         print("OS: ", self.os, " Price: ", self.price)
 
-# create laptop class that inherits from computer class
 class Laptop(Computer):
     def __init__(self, os, price, battery):
         super().__init__(os, price)
@@ -51,7 +50,7 @@ class Desktop(Computer):
     def getmonitor(self):
         return self.monitor
 
-# Part 5: Using the concept of operator overloading in Python, change the behavior of the multiplication operator in a way that multiplication operator behaves like an addition operator.
+# Part 5
 class Add:
     def __init__(self, num):
         self.num = num
